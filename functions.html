@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Learning JS</title>
+</head>
+<body>
+    <h1 id="heading" onclick="changeText()">Javascript</h1>
+    <p id="addition"></p>
+
+    <script>
+        addNumbers(8, 7);
+        function changeText() {
+            if(document.getElementById("heading").innerHTML== 'Javascript'){
+                document.getElementById("heading").innerHTML= 'is awesome'
+            } else {
+               document.getElementById("heading").innerHTML= 'Javascript'
+            }
+        }
+
+        function addNumbers(num1, num2) {
+            document.getElementById("addition").innerHTML = num1 + num2;
+        }
+
+    </script>
+</body>
+</html>
